@@ -8,7 +8,15 @@ builder.Services.AddDbContext<MvcMovieContext>(options =>
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+
 var app = builder.Build();
+
+// Add SeedData as a service that will run against all services.
+// SeedData get access to the database Context and then runs against the dbcontext.
+using (var scope = app.Services.CreateScope()) {
+    var services = scope.ServiceProvider;
+    SeedData.Initialize(services);
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment()) {
