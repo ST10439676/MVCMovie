@@ -21,28 +21,32 @@ public class SeedData {
                     Title = "When Harry Met Sally",
                     ReleaseDate = DateTime.Parse("1989-2-12"),
                     Genre = "Romantic Comedy",
-                    GrossPrice = 7.99M
+                    GrossPrice = 7.99M,
+                    Rating = "R"
                 },
                 new Movie
                 {
                     Title = "Ghostbusters ",
                     ReleaseDate = DateTime.Parse("1984-3-13"),
                     Genre = "Comedy",
-                    GrossPrice = 8.99M
+                    GrossPrice = 8.99M,
+                    Rating = "R"
                 },
                 new Movie
                 {
                     Title = "Ghostbusters 2",
                     ReleaseDate = DateTime.Parse("1986-2-23"),
                     Genre = "Comedy",
-                    GrossPrice = 9.99M
+                    GrossPrice = 9.99M,
+                    Rating = "R"
                 },
                 new Movie
                 {
                     Title = "Rio Bravo",
                     ReleaseDate = DateTime.Parse("1959-4-15"),
                     Genre = "Western",
-                    GrossPrice = 3.99M
+                    GrossPrice = 3.99M,
+                    Rating = "R"
                 });
             
             context.SaveChanges();
