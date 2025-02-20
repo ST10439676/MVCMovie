@@ -9,4 +9,5 @@ public class Movie {
     public DateTime ReleaseDate { get; set; }
     public string? Genre { get; set; }
     public decimal GrossPrice { get; set; }
+    public string? Rating { get; set; }
 }
